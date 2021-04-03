@@ -1,0 +1,22 @@
+﻿
+@using System.Collections
+@model IEnumerable<Promoter>
+@{
+    ViewData["Title"] = "StudentIndex";
+}
+
+<br />
+<br />
+<div class="backgroundWhite container" style="background-color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+
+
+
+
+    @foreach (var item in Model)
+    {
+        <div class="row" id="menu-wrapper">
+            <partial name="_ThumbNailAreaPartial" />
+        </div>
+    }
+
+</div>
